@@ -277,6 +277,7 @@ public abstract class AbstractOperator<T extends EntityInfo> {
                         Optional.ofNullable(namespace).orElse("'all'"));
                 return res;
         }).exceptionally(e -> {
+            log.info("#####MY FORK");
             log.error("{} startup failed for namespace {}", operatorName, namespace, e.getCause());
             return null;
         });
