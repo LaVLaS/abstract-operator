@@ -105,7 +105,7 @@ public class SDKEntrypoint {
     private CompletableFuture<Void> run() {
         printInfo();
         if (isOpenShift) {
-            log.info("{}OpenShift{} environment detected.", AnsiColors.ye(), AnsiColors.xx());
+            log.info("{}***FORKED****OpenShift{} environment detected.", AnsiColors.ye(), AnsiColors.xx());
         } else {
             log.info("{}Kubernetes{} environment detected.", AnsiColors.ye(), AnsiColors.xx());
         }
